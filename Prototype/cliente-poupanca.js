@@ -6,20 +6,20 @@ function Cliente(nome,cpf,email,saldo){
     this.depositar = function(valor){
         this.saldo += valor
     }
-}
+};
 
 function ClientePoupanca(nome, cpf, email, saldo, saldoPoup) {
     Cliente.call(this, nome, cpf , email, saldo)
     this.saldoPoup = saldoPoup
-}
+};
 
-const ju = new ClientePoupanca("JU", "555525252522", "ju@email.com", 100, 200)
+const ju = new ClientePoupanca("JU", "555525252522", "ju@email.com", 100, 200);
 
-console.log(ju)
+console.log(ju);
 
 ClientePoupanca.prototype.depositarPoup = function(valor){
     this.saldoPoup += valor
-}
+};
 
-ju.depositarPoup(30)
-console.log(ju.saldoPoup)
+ju.depositarPoup(30);
+console.log(ju.saldoPoup);
