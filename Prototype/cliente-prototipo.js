@@ -1,3 +1,4 @@
+                    // Array of cliente
 function Cliente (nome, cpf, email, saldo) {
     this.nome = nome
     this.cpf = cpf
